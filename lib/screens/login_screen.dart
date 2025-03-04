@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shamusa/screens/Interests_screen.dart';
+import 'package:shamusa/screens/interests_screen.dart';
 import 'package:shamusa/screens/signup_screen.dart';
 import 'package:shamusa/screens/welcom_screen.dart';
 

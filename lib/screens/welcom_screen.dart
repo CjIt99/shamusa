@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shamusa/screens/login_screen.dart';
 import 'package:shamusa/screens/signup_screen.dart';
+import 'package:shamusa/screens/sun_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -88,6 +89,33 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+              ),
+              Positioned(
+                bottom: 330,
+                child: ElevatedButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SunnyScreen(),
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF77C043),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 62, vertical: 5),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                  child: const Text(
+                    "ابدء",
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                      fontFamily: 'Schyler',
+                    ),
+                  ),
                 ),
               ),
               Positioned(

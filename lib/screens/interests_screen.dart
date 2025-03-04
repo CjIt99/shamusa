@@ -1,7 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shamusa/screens/login_screen.dart';
 import 'package:shamusa/screens/signup_screen.dart';
+import 'package:shamusa/screens/sun_screen.dart';
 import 'package:shamusa/widgets/custom_back_button.dart';
 
 class InterestsScreen extends StatefulWidget {
@@ -166,7 +169,12 @@ class _InterestsScreenState extends State<InterestsScreen> {
                       const SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: selectedInterests.isNotEmpty
-                            ? () => Navigator.pop(context)
+                            ? () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const SunnyScreen()),
+                                )
                             : null,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF77C043),
@@ -178,9 +186,10 @@ class _InterestsScreenState extends State<InterestsScreen> {
                         child: const Text(
                           "متابعة",
                           style: TextStyle(
-                              fontSize: 18,
-                              fontFamily: 'Schyler',
-                              color: Colors.white),
+                            fontSize: 18,
+                            fontFamily: 'Schyler',
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ],

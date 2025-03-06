@@ -111,7 +111,7 @@ class _InterestsScreenState extends State<InterestsScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       const Text(
-                        "اختر اهتماماتك",
+                        "اختر اهتمامات طفلك",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 22,

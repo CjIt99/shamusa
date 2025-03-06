@@ -70,7 +70,7 @@ class _SunnyScreenState extends State with SingleTickerProviderStateMixin {
               child: GestureDetector(
                 onTap: _toggleAnimation,
                 child: Lottie.asset(
-                  'assets/sun_animation.json', // Ensure the correct path
+                  'assets/sun_animation.json',
                   controller: _controller,
                   width: 350,
                   height: 350,
